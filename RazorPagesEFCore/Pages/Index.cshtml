@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var imagePath = "northwind.png";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Northwind Traders</h1>
+    <div class="d-flex justify-content-center">
+        <img src="~/images/@imagePath" class="d-block w-80 img-fluid rounded" alt="Northwind Traders" style="height: 300px;">
+    </div>
+    <p>Proudly distributing fine food products around the world for @Model.YearsInBusiness years.</p>
+    <p></p>
+</div>
